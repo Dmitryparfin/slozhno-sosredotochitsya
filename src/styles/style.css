@@ -2,4 +2,74 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  color: var(--text-color, #f1b2ce);
+  font-family: var(--main-font, sans-serif);
+  background-color: var(--bg-color, #000028);
+}
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 10px;
+  block-size: 648px;
+}
+
+.header__theme-menu {
+  display: grid;
+  justify-items: end;
+  padding-block-end: 48px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  color: #ff0070;
+  text-align: center;
+  font-family: var(--main-font, sans-serif);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */
+}
+
+.header__theme-menu-button {
+  inline-size: 69px;
+  background-color: transparent;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid #ff0070;
+}
+
+.header__theme-menu-button_type_dark {
+}
+
+.title {
+  display: grid;
+  align-items: end;
+  color: #db00ff;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-family: var(--main-font, sans-serif);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+}
+
+.title-decore {
+  color: #000028;
+  font-family: var(--main-font, sans-serif);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+  background-color: #ff0070;
+  margin-block-start: 55px;
+  margin-block-end: 56px;
 }
