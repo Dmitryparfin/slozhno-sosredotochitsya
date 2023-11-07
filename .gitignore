@@ -3,3 +3,8 @@ dist/
 .DS_Store
 .idea
 .vscode
+package.json
+package-lock.json
+gulpfile.js
+.prettier
+stylelint.config

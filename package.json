@@ -5,16 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo 'Привет!'",
-    "check": "prettier --check \"./src/**/*.{html,css,js}\"",
-    "format": "prettier --write \"./src/**/*.{html,css,js}\"",
-    "lint": "stylelint \"./src/**/*.css\"",
-    "lintfix": "stylelint \"./src/**/*.css\" --fix",
+    "check": "prettier --check \"./**/*.{html,css,js}\"",
+    "format": "prettier --write \"./**/*.{html,css,js}\"",
+    "lint": "stylelint \"./**/*.css\"",
+    "lintfix": "stylelint \"./**/*.css\" --fix",
     "checkAll": "npm run check && npm run lint",
     "fixAll": "npm run format && npm run lintfix",
     "build": "gulp build",
     "dev": "gulp",
     "fixAndBuild": "npm run fixAll && npm run build",
-    "lintfixAndPush": "npm run fixAll && git add -A && git commit -m \"header\" && git push"
+    "lintfixAndPush": "npm run fixAll && git add -A && git commit -m \"main\" && git push"
   },
   "author": "",
   "license": "ISC",
