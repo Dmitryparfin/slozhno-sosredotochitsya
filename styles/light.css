@@ -4,9 +4,41 @@
   переключая тему
 */
 
-.page.theme_light {
+.page.theme_light 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
-  */
+  */ {
+  --bg-image: url(../images/cover-image-light.png);
+  --color-bg: #353430;
+  --color-text: #353430;
+  --color-accent: #ff8dcb;
+  --color-title: #ffc2e6;
+  --color-accent-text: #353430;
+  --color-button-hover: rgb(50 49 45 / 0.4);
+  --color-button-active: #353430;
+  --rec-visibility: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --bg-image: url(../images/cover-image-light.png);
+    --color-bg: #353430;
+    --color-text: #353430;
+    --color-accent: #ff8dcb;
+    --color-accent-text: #353430;
+    --color-title: #ffc2e6;
+    --color-button-hover: rgb(50 49 45 / 0.4);
+    --color-button-active: #353430;
+    --rec-visibility: hidden;
+  }
+
+  .rec::before {
+    display: none;
+  }
+
+  .rec::after {
+    display: none;
+  }
 }

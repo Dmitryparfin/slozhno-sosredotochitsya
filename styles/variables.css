@@ -4,9 +4,14 @@
 */
 
 :root {
-  --main-font: 'IBM Plex Mono';
-  --bg-color: #000028;
+  --main-font: 'IBM Plex Mono', sans-serif;
   --bg-image: url(../images/cover-image-dark.png);
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
+  --color-bg: #000028;
+  --color-text: #f1b2ce;
+  --color-accent: #ff0070;
+  --color-title: #db00ff;
+  --color-accent-text: #ff0070;
+  --color-button-active: #ff0070;
+  --color-button-hover: rgb(255 0 112 / 0.4);
+  --rec-visibility: visible;
 }
