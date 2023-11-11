@@ -41,8 +41,8 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px #FF0070;
-  background: #FF0070;
+  box-shadow: 0 0 2px 2px var(--color-accent);
+  background: var(--color-accent);
   inline-size: 9px;
   block-size: 9px;
 }
