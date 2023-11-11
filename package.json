@@ -15,6 +15,7 @@
     "dev": "gulp",
     "fixAndBuild": "npm run fixAll && npm run build",
     "lintfixandpush": "npm run fixAll && git add -A && git commit -m \"fix\" && git push",
+    "gitcommit": "git add -A && git commit -m \"content gap\"",
     "gitpush": "git add -A && git commit -m \"add readme\" && git push"
   },
   "author": "",

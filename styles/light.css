@@ -18,6 +18,8 @@
   --color-button-hover: rgb(50 49 45 / 0.4);
   --color-button-active: #353430;
   --rec-visibility: hidden;
+  --title-shadow: #ff0070;
+  --rec-display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,7 +33,7 @@
     --color-title: #ffc2e6;
     --color-button-hover: rgb(50 49 45 / 0.4);
     --color-button-active: #353430;
-    --rec-visibility: hidden;
+    --rec-display: none;
   }
 
   .decorated-zone::before {
@@ -42,13 +44,5 @@
   .decorated-zone::after {
     border-inline-start: 1px solid var(--color-bg);
     border-block-end: 1px solid var(--color-bg);
-  }
-
-  .rec::before {
-    display: none;
-  }
-
-  .rec::after {
-    display: none;
   }
 }
