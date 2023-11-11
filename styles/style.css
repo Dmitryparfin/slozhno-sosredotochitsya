@@ -127,8 +127,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--color-accent);
-  border-block-start: 1px solid var(--color-accent);
+  border-inline-end: 1px solid var(--color-accent-text);
+  border-block-start: 1px solid var(--color-accent-text);
   inset-inline-end: 10px;
   inset-block-start: 10px;
 }
@@ -138,8 +138,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--color-accent);
-  border-block-end: 1px solid var(--color-accent);
+  border-inline-start: 1px solid var(--color-accent-text);
+  border-block-end: 1px solid var(--color-accent-text);
   inset-inline-start: 10px;
   inset-block-end: 10px;
 }
@@ -262,9 +262,10 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid var(--color-accent);
-  border-block-start: 1px solid var(--color-accent);
+  border-inline-end: 1px solid var(--color-accent-text);
+  border-block-start: 1px solid var(--color-accent-text);
   justify-self: end;
+  
 }
 
 .footer-decorated-zone::after {
@@ -272,8 +273,8 @@
   position: absolute;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid var(--color-accent);
-  border-block-end: 1px solid var(--color-accent);
+  border-inline-start: 1px solid var(--color-accent-text);
+  border-block-end: 1px solid var(--color-accent-text);
   align-self: end;
   
 }
@@ -330,6 +331,7 @@
   .section-two {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
 
   .title-section-two {
@@ -346,6 +348,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
+    margin: 0;
   }
 
   .title-item {
@@ -358,7 +361,7 @@
   }
 
   .section-gallery {
-    
+    margin: 0;
   }
 
   .gallery-title-decore {
@@ -453,7 +456,7 @@
 
   .content {
     gap: 80px;
-    margin: 0 20px;
+    padding: 0 20px;
   }
 
   .section-one {
@@ -465,6 +468,7 @@
   .section-two {
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
 
   .title-section-two {
@@ -482,6 +486,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 12px;
+    margin: 0;
   }
 
   .title-item {
@@ -494,6 +499,7 @@
   }
 
   .section-gallery {
+    margin: 0;
   }
 
   .gallery-title-decore {
