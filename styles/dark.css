@@ -19,6 +19,7 @@
   --color-button-active: #ff0070;
   --color-button-hover: rgb(255 0 112 / 0.4);
   --rec-visibility: visible;
+  --rec-display: flex;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,5 +34,16 @@
     --color-button-active: #ff0070;
     --color-button-hover: rgb(255 0 112 / 0.4);
     --rec-visibility: visible;
+    --rec-display: flex;
+  }
+
+  .decorated-zone::before {
+    border-inline-end: 1px solid var(--color-accent-text);
+    border-block-start: 1px solid var(--color-accent-text);
+  }
+
+  .decorated-zone::after {
+    border-inline-start: 1px solid var(--color-accent-text);
+    border-block-end: 1px solid var(--color-accent-text);
   }
 }

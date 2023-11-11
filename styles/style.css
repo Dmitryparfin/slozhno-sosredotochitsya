@@ -2,11 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background-color: var(--color-bg);
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: fixed var(--color-bg) var(--bg-image) center/cover;
   color: var(--color-text);
   font-family: var(--main-font);
   display: grid;
@@ -21,7 +17,7 @@
   padding: 10px;
 }
 
-.header-decorated-zone::before {
+.decorated-zone::before {
   content: '';
   position: absolute;
   inline-size: 25px;
@@ -32,7 +28,7 @@
   inset-block-start: 10px;
 }
 
-.header-decorated-zone::after {
+.decorated-zone::after {
   content: '';
   position: absolute;
   inline-size: 25px;
@@ -98,6 +94,7 @@
   inline-size: 69px;
   background-color: transparent;
   border: 1px solid transparent;
+  transition: outline .2s linear;
 }
 
 .header__theme-menu-button:hover {
@@ -114,10 +111,6 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--color-button-active);
-}
-
-.header__theme-menu-button_active:hover {
   outline: 1px solid var(--color-button-active);
 }
 
@@ -274,27 +267,7 @@
   display: grid;
   padding: 10px;
   block-size: 100vh;
-}
-
-.footer-decorated-zone::before {
-  content: '';
-  position: absolute;
-  inline-size: 25px;
-  block-size: 25px;
-  border-inline-end: 1px solid var(--color-accent-text);
-  border-block-start: 1px solid var(--color-accent-text);
-  justify-self: end;
-  
-}
-
-.footer-decorated-zone::after {
-  content: '';
-  position: absolute;
-  inline-size: 25px;
-  block-size: 25px;
-  border-inline-start: 1px solid var(--color-accent-text);
-  border-block-end: 1px solid var(--color-accent-text);
-  align-self: end;
+  position: relative;
 }
 
 .footer-title {
@@ -319,13 +292,13 @@
     padding: 20px;
   }
   
-  .header-decorated-zone::before {
+  .decorated-zone::before {
    
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
   
-  .header-decorated-zone::after {
+  .decorated-zone::after {
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
@@ -409,13 +382,13 @@
     align-items: start;
   }
   
-  .header-decorated-zone::before {
+  .decorated-zone::before {
    
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
   
-  .header-decorated-zone::after {
+  .decorated-zone::after {
     inset-inline-start: 20px;
     inset-block-end: 20px;
   }
