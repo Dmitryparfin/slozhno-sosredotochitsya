@@ -229,7 +229,7 @@
 .section-gallery-image {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 }
 
 .section-gallery-item {
@@ -424,6 +424,7 @@
   .title {
     font-size: var(--font-size-desktop);
     margin-left: -20px;
+    text-shadow: 4px 4px 0 var(--title-shadow);
   }
 
   .header-title-decore {

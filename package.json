@@ -15,7 +15,7 @@
     "dev": "gulp",
     "fixAndBuild": "npm run fixAll && npm run build",
     "lintfixandpush": "npm run fixAll && git add -A && git commit -m \"fix\" && git push",
-    "gitpush": "git add -A && git commit -m \"fix decorated-zone\" && git push"
+    "gitpush": "git add -A && git commit -m \"fix shadow 1024\" && git push"
   },
   "author": "",
   "license": "ISC",
